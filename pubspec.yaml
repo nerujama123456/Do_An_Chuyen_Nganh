@@ -1,0 +1,41 @@
+name: my_first_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.0.0 # Đảm bảo SDK phù hợp với phiên bản Flutter của bạn (thay 3.9.2 thành 3.0.0 hoặc phiên bản thực tế)
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Các packages cần thiết cho ứng dụng
+  supabase_flutter: ^2.5.2
+  path: ^1.8.3
+  http: ^1.5.0
+  bloc: ^8.1.0
+  intl: ^0.18.1
+  fl_chart: ^0.65.0
+  flutter_bloc: ^8.1.0
+  shared_preferences: ^2.2.2
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# KHỐI FLUTTER DUY NHẤT
+flutter:
+  # Cài đặt material design phải nằm ở đây
+  uses-material-design: true
+
+  # Khai báo Assets
+  assets:
+    # Nếu logo.png nằm trong thư mục 'assets' ở gốc dự án:
+    - assets/
+    # Hoặc nếu nó nằm trong thư mục 'assets/images':
+    # - assets/images/
+    # Bạn chỉ nên chọn MỘT trong hai cách trên, tùy thuộc vào cấu trúc thư mục thực tế.
